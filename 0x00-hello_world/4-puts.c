@@ -1,11 +1,13 @@
 #include <stdio.h>
-/*
-*This is
-*a comment
+/**
+* main  - Entry point
+*
+* Return: Always 0 (Success)
 */
 
 int main(void)
 {
+/* This will simply print some text */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
