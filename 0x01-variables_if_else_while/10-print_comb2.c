@@ -17,8 +17,11 @@ int main(void)
 		{
 			putchar(o);
 			putchar(p);
+			if (o != '9' || p != '9')
+			{
 			putchar(44);
 			putchar(32);
+			}
 		}
 	}
 	putchar(10);
