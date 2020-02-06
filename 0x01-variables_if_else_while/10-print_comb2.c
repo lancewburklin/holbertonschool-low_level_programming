@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - print plenty of numbers
