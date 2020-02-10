@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <ctype.h>
 
 /**
  * _islower - Checks if it is lower
@@ -11,8 +9,8 @@
 
 int _islower(int c)
 {
-	if (isupper(c))
-		return (0);
-	else
+	if (c < 123 && c > 96)
 		return (1);
+	else
+		return (0);
 }
