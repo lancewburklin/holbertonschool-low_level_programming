@@ -7,6 +7,7 @@
  * print_alphabet - Prints the alphabet
  * print_alphabet_x10 - Print the alphabet 10 times
  * _islower - Is it lowercase or nah
+ * _isalpha - Tests if it is a letter
  *
  * Return: 0, of course
  */
@@ -18,5 +19,7 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 int _islower(int c);
+
+int _isalpha(int c);
 
 #endif
