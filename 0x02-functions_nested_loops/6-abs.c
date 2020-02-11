@@ -1,4 +1,4 @@
-#include "holberton.c"
+#include "holberton.h"
 
 /**
  * _abs - Print absolute value
@@ -13,4 +13,6 @@ int _abs(int x)
 		return (-x);
 	else if (x >= 0)
 		return (x);
+	else
+		return (0);
 }
