@@ -1,4 +1,4 @@
-#include "holberton.c"
+#include "holberton.h"
 
 /**
  * add - Add two numbers
