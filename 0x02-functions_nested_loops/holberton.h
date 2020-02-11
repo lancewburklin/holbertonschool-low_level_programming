@@ -12,6 +12,9 @@
  * n: Any input
  * int_abs - Prints absolute value
  * x: Any value
+ * print_last_digit - Prints the last digit
+ * jack_bauer - Counts every minute
+ * times_table - Multiplies things
  *
  * Return: 0, of course
  */
@@ -29,5 +32,11 @@ int _isalpha(int c);
 int print_sign(int n);
 
 int _abs(int x);
+
+int print_last_digit(int x);
+
+void jack_bauer(void);
+
+void times_table(void);
 
 #endif
