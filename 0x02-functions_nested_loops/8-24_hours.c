@@ -12,10 +12,13 @@ void jack_bauer(void)
 	int y;
 	int z;
 	int zz;
+	int i = 58;
 
 	for (x = 48; x < 51; x++)
 	{
-		for (y = 48; y < 52; y++)
+		if (x == 50)
+			i = 52;
+		for (y = 48; y < i; y++)
 		{
 			for (z = 48; z < 54; z++)
 			{
