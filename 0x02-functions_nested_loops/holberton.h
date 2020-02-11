@@ -15,6 +15,7 @@
  * print_last_digit - Prints the last digit
  * jack_bauer - Counts every minute
  * times_table - Multiplies things
+ * add - Add two numbers
  *
  * Return: 0, of course
  */
@@ -38,5 +39,7 @@ int print_last_digit(int x);
 void jack_bauer(void);
 
 void times_table(void);
+
+int add(int c, int x);
 
 #endif
