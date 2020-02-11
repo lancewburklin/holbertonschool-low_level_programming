@@ -16,6 +16,7 @@
  * jack_bauer - Counts every minute
  * times_table - Multiplies things
  * add - Add two numbers
+ * print_to_98 - Prints to 98
  *
  * Return: 0, of course
  */
@@ -41,5 +42,7 @@ void jack_bauer(void);
 void times_table(void);
 
 int add(int c, int x);
+
+void print_to_98(int n);
 
 #endif
