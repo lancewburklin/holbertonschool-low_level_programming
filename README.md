@@ -1,1 +1,1 @@
-First use of C in BASH
+This is some c programming
