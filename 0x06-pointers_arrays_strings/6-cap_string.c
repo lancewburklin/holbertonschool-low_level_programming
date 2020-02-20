@@ -16,8 +16,8 @@ char *cap_string(char *n)
 		x = (int)n[i];
 		if (x > 96 && x < 123)
 		{
-			if (i = 0)
-				n[i] = (char)(x-32);
+			if (i == 0)
+				n[i] = (char)(x - 32);
 			y = (int)n[i - 1];
 			if (y == 32 || y == 33 || y == 40 || y == 41 || y == 44
 			    || y == 46 || y == 59 || y == 63 ||
