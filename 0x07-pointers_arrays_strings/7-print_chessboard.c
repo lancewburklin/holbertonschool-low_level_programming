@@ -3,7 +3,6 @@
 /**
  * print_chessboard - Prints a chessboard
  * @a: Board
- * @8: Size
  *
  * Return: void
  */
