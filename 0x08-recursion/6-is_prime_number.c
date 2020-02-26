@@ -12,7 +12,7 @@ int is_prime_number(int n)
 	int x;
 
 	if (n <= 1)
-		return 0;
+		return (0);
 	x = _check(n, 2);
 	return (x);
 }
@@ -30,8 +30,8 @@ int _check(int num, int test)
 	if (num % test == 0 && test != num)
 		test = 0;
 	else if (test == num)
-		return 1;
+		return (1);
 	if (test != num && test != 0)
-		return ( _check(num, test + 1));
+		return (_check(num, test + 1));
 	return (test);
 }
