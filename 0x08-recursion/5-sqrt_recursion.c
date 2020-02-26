@@ -15,6 +15,14 @@ int _sqrt_recursion(int n)
 	return (x);
 }
 
+/**
+ * _test - Test the numbers
+ * @num: The original number
+ * @test: number being tested
+ *
+ * Return: The square root
+ */
+
 int _test(int num, int test)
 {
 	if (test * test == num)
