@@ -25,4 +25,6 @@ int is_palindrome(char *s);
 
 int my_tester(char *strng, int len, int counter);
 
+int _get_len(char *s);
+
 #endif
