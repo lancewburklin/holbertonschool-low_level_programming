@@ -13,17 +13,33 @@ int is_palindrome(char *s)
 	int i = 0;
 	int x;
 
-	while (s[i] != '\0')
-		i++;
+	i = _get_len(s);
 	i--;
 	if (i <= 0)
 		return (1);
 	x = my_tester(s, i, c);
-	return(x);
+	return (x);
 }
 
 /**
- * _tester - Tests a string
+ * _get_len - Get length
+ * @s: The string
+ *
+ * Return: Length
+ */
+
+int _get_len(char *s)
+{
+	if (*s != '\0')
+	{
+		s++;
+		return (_get_len(s) + 1);
+	}
+	return (0);
+}
+
+/**
+ * my_tester - Tests a string
  * @strng: String to search
  * @len: Max length of string
  * @counter: Just a counter
