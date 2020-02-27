@@ -21,4 +21,8 @@ int _check(int num, int test);
 
 int is_prime_number(int n);
 
+int is_palindrome(char *s);
+
+int my_tester(char *strng, int len, int counter);
+
 #endif
