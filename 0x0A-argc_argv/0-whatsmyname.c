@@ -2,8 +2,8 @@
 
 /**
  * main - The main function
- * @argc - Argument count
- * @argv - Array of argument strings
+ * @argc: Argument count
+ * @argv: Array of argument strings
  *
  * Return: Always 0
  */
