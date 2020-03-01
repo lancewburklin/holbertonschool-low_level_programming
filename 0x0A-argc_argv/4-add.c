@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return (1);
+		return (0);
 	}
 	for (n = 1; n < argc; n++)
 	{
@@ -31,14 +31,14 @@ int main(int argc, char *argv[])
 		if (flag == 0)
 		{
 			printf("%d\n", 0);
-			return (1);
+			return (0);
 		}
 	}
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!(isdigit(argv[i][j])) && argv[i][j] != '-')
+			if (!(isdigit(argv[i][j])))
 			{
 				printf("Error\n");
 				return (1);
