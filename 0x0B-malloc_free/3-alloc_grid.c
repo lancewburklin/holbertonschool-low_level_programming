@@ -17,18 +17,18 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	newarray = (int **)malloc(width * sizeof(int *));
+	newarray = malloc(width * sizeof(int *));
 	if (newarray == NULL)
 		return (NULL);
 	for (c = 0; c < width; c++)
 	{
-		newarray[c] = (int *)malloc(height * sizeof(int));
+		newarray[c] = malloc(height * sizeof(int));
 		if (newarray[c] == NULL)
 			return (NULL);
 	}
-	for (i = 0; i < height; i++)
+	for (i = 0; i < width; i++)
 	{
-		for (n = 0; n < width; n++)
+		for (n = 0; n < height; n++)
 		{
 			newarray[i][n] = 0;
 		}
