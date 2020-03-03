@@ -13,13 +13,15 @@
 int **alloc_grid(int width, int height)
 {
 	int **newarray;
-	int i, n, c;
+	int i, n, c, d;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 	newarray = malloc(height * sizeof(int *));
 	if (newarray == NULL)
 	{
+		for (d = 0; d < height; d++)
+			free(newarray);
 		free(newarray);
 		return (NULL);
 	}
