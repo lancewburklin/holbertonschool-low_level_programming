@@ -40,6 +40,13 @@ char *argstostr(int ac, char **av)
 	return (newarray);
 }
 
+/**
+ * _strlen - Gets the string length
+ * @s: The string
+ *
+ * Return: Nothing
+ */
+
 int _strlen(char *s)
 {
 	int i = 0;
