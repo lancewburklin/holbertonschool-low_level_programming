@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checed - Makes a new array
+ * malloc_checked - Makes a new array
  * @b: The size of the array
  *
  * Return: Nothing
