@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= s2l)
 		n = s2l;
 	newarray = malloc(s1l + n + 1);
-	if (newarray = NULL)
+	if (newarray == NULL)
 		return (NULL);
 	for (i = 0; i < s1l; i++)
 	{
