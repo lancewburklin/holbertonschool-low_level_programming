@@ -18,6 +18,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *newowner;
 	dog_t *fish = malloc(sizeof(dog_t));
 
+	if (name == NULL)
+		return (NULL);
+	if (owner == NULL)
+		return (NULL);
 	if (fish == NULL)
 		return (NULL);
 	newname = malloc(_strlen(name) + 1);
