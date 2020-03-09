@@ -20,14 +20,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (fish == NULL)
 		return (NULL);
-	newname = malloc(strlen(name) + 1);
+	newname = malloc(_strlen(name) + 1);
 	if (newname == NULL)
 	{
 		free(fish);
 		return (NULL);
 	}
 	newname = _strcpy(newname, name);
-	newowner = malloc(strlen(owner) + 1);
+	newowner = malloc(_strlen(owner) + 1);
 	if (newowner == NULL)
 	{
 		free(fish);
@@ -56,4 +56,20 @@ void *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	dest[i] = '\0';
 	return (dest);
+}
+
+/**
+ * _strlen - Length of a string
+ * @s: The string
+ *
+ * Return: Length
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
