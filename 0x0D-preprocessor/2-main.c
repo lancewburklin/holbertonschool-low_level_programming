@@ -1,5 +1,7 @@
 #include <stdio.h>
+#ifndef test
 #define test __FILE__
+#endif
 
 /**
  * main - prints the original file name
