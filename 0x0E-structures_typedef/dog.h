@@ -25,4 +25,6 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void *_strcpy(char *dest, char *src);
 
+int _strlen(char *s);
+
 #endif
