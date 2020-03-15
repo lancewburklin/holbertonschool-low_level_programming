@@ -11,7 +11,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, n = 0, flag = 0;
+	int i = 0, n = 0;
+	char *separator = "";
 	funstruct ops[] = {
 		{"c", op_char},
 		{"i", op_int},
@@ -27,10 +28,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *(ops[n]).dat)
 			{
-				if (flag == 1)
-					printf(", ");
+				printf("%s", separator);
 				ops[n].f(args);
-				flag = 1;
+				separator = ", ";
 			}
 			n++;
 		}
