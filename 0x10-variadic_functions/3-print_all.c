@@ -77,7 +77,7 @@ void op_string(va_list args)
 
 	if (argsstrng == NULL)
 	{
-		printf("(nil)");
+		printf("(nil)\n");
 		return;
 	}
 	printf("%s", argsstrng);
