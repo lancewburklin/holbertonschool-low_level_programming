@@ -18,6 +18,7 @@ void print_all(const char * const format, ...)
 		{"i", op_int},
 		{"f", op_float},
 		{"s", op_string},
+		{NULL, NULL}
 	};
 
 	va_start(args, format);
