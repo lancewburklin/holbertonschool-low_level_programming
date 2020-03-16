@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <string.h>
 
 /**
  * print_all - Prints everything given to it
@@ -22,7 +23,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-		while (format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		n = 0;
 		while (n < 4)
