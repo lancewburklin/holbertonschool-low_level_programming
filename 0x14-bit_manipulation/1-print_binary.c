@@ -14,13 +14,13 @@ void print_binary(unsigned long int n)
 
 	while (mask > 0)
 	{
-		if (n & mask)
+		if (mask & n)
 		{
 			_putchar('1');
 			flag = 1;
 		}
 		else if (flag == 1 || !(mask >> 1))
 			_putchar('0');
-		mask = mask >> 1;
+		mask >>= 1;
 	}
 }
