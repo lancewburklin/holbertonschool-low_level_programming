@@ -26,6 +26,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	buflen = read(newfile, buf, letters);
+	if (buflen == -1)
+		return (0);
 
 	if (buflen > 0)
 		count = write(1, buf, buflen);
