@@ -1,0 +1,1 @@
+This is a directory for testing standard I/O in c.
