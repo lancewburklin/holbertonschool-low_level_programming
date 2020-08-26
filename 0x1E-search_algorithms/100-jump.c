@@ -5,6 +5,7 @@
 * @array: Array to search
 * @size: Size of the array
 * @value: Value to search
+* Return: The index or -1 for a fail
 */
 
 int jump_search(int *array, size_t size, int value)
@@ -34,5 +35,5 @@ int jump_search(int *array, size_t size, int value)
 			return (i);
 		i++;
 	}
-	return(-1);
+	return (-1);
 }
